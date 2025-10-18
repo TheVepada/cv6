@@ -1,6 +1,6 @@
 body{
     min-height: 100vh;
-    background-color: black;
+    background-color: palegreen ;
     display: flex;
     align-items: center;
 }
@@ -26,7 +26,8 @@ body{
     }
     100% {
         transform: translateX(calc(100vw - 200px)) rotate(360deg);
-        background-color: yellow;
+        background-color:purple;
         border-radius: 50%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     }
 }
