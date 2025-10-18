@@ -1,0 +1,32 @@
+body{
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-left: 50px;
+    animation: transformAnimation 4s ease-in-out forwards;
+}
+
+@keyframes transformAnimation {
+    0% {
+        transform: translateX(0) rotate(0deg);
+        background-color: red;
+        border-radius: 0;
+    }
+    25% {
+        transform: translateX(0) rotate(360deg);
+        background-color: red;
+        border-radius: 0;
+    }
+    100% {
+        transform: translateX(calc(100vw - 200px)) rotate(360deg);
+        background-color: yellow;
+        border-radius: 50%;
+    }
+}
